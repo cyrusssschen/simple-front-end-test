@@ -1,0 +1,36 @@
+.app {
+  text-align: center;
+
+  .page__header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    background-color: $colour-background-default;
+    box-shadow: 0 0.0625rem 0.25rem $colour-box-shadow-default;
+    z-index: 9999;
+
+    h1 {
+      margin: 1rem 0;
+      color: $colour-text-navy;
+      font-size: 1.5rem;
+    }
+  }
+
+  .content__container {
+    margin: 6rem auto 2rem;
+
+    > .row {
+      @include media-breakpoint-down(sm) {
+        flex-direction: column-reverse;
+      }
+
+      @include media-breakpoint-up(md) {
+        > div {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
