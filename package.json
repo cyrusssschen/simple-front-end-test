@@ -12,7 +12,7 @@
     "test": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client-unit-test\""
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "concurrently": "^4.0.1",
